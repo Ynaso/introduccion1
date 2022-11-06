@@ -43,9 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Core',
-    'blog'
+    'blog',
+    'tailwind', 
+    'theme'
 ]
-
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,7 +62,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Core.urls'
-
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
